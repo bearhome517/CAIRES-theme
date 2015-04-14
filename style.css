@@ -1,0 +1,206 @@
+ /*
+Theme Name: UF CAIRES
+Author: Laura Bernheim
+*/
+	
+.top-bar {
+	background: #3D6664;
+}
+
+.top-bar-section li a:not(.button) {
+    background: #3D6664 !important;   
+}
+
+.top-bar-section li a:not(.button):hover {
+    background: #445273 !important;   
+}
+
+.top-bar-section ul li.active > a {
+    background: #8DB497 !important;   
+}
+
+.top-bar-section ul li.active > a:hover {
+    background: #8DB597 !important;   
+}
+
+.top-bar-section .has-form {
+    background: #3D6664;
+}
+
+.top-bar-section ul li {
+    background: #3D6664;
+}
+
+.top-bar-section ul li > a {
+    font-size: 1rem;
+}
+
+.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+	border-right: solid 1px #8e8e8e;
+}
+
+.hot-link-top {
+    display:block;
+    height: 34px;
+    width: 300px;
+    background-image: url(img/hotlink1.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: top;  /* <-- this is key #1 */
+}
+.hot-link-top:hover {
+    background-position: bottom; /* <-- this is key #2 */
+}
+
+.hot-link-bottom {
+    display:block;
+    height: 34px;
+    width: 300px;
+    background-image: url(img/hotlink2.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: top;  /* <-- this is key #1 */
+}
+.hot-link-bottom:hover {
+    background-position: bottom; /* <-- this is key #2 */
+}
+
+.button.alert {
+	background-color: #8DB597;
+}
+
+.button.alert:hover {
+	background-color: #DEE6AA;
+}
+
+.button {
+	background-color: #3D6664;
+	border-color: #294B49;
+	color: #FFF;
+}
+
+.button:hover, .button:focus {
+    background-color: #294B49; }
+
+.content-wrapper {
+	max-width: 62.5em;
+	margin: 0 auto;
+	padding-top: .75em;
+}
+
+/*.content-wrapper .row {
+	margin: 1.425rem 0;
+}*/
+
+.row-space {
+	margin: 1.425rem 0 !important;
+}
+
+.header h1 {
+	font-size: 1.8675rem;
+	margin-top: .5rem;	
+}
+
+
+.hot-link {
+	margin-top: 1.8675rem;
+}
+
+.color-background-top {
+	background: #3D6664;
+	width: 100%;
+	border-bottom: 4px solid #8DB597;	
+}
+
+.color-background-bottom {
+	background-color: #3D6664;
+	padding: 2.85rem 0;
+	width: 100%;
+	color: #FFF;
+	border-top: 4px solid #8DB597;	
+}
+
+.color-background-bottom a {
+	color: #8DB597;
+}
+
+.color-background-bottom a:hover {
+	color: #DEE6AA;
+}
+
+.color-background-title {
+	background: #EEE;
+	width: 100%;
+	padding: 1.25em 0;
+	margin-bottom: 1.25em;
+	/*border-top: 1px solid #D8D8D8;
+	border-bottom: 1px solid #D8D8D8;*/
+}
+
+.color-background-title h2 {
+	color: #3D6664;
+	font-size: 1.775rem;
+}
+
+a {
+	color: #8DB597;
+}
+
+a:hover {
+	color: #3D6664;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+}
+
+p, ul, li {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.search-top {
+	float: left;
+}
+
+.tagline {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 1rem;
+}
+
+.thumb {
+	padding: 0 1.4rem 1.4rem 0;
+}
+
+.faculty {
+	width: 100px;
+}
+
+.small {
+	width: 75px;
+}
+
+.one-half {
+	width: 50%;
+	padding: 0 2.5em 2.5em 2.5em;
+	float: left;
+}
+
+.one-third {
+	width: 33%;
+	padding: 1.25em;
+	float: left;
+}
+
+.one-fourth {
+	padding: 1.25em;
+}
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
