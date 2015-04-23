@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Full width
+Template Name: Under construction
 */
 get_header(); ?>
 
@@ -19,13 +19,15 @@ get_header(); ?>
 
 <div class="content-wrapper">
     <div class="row">
-        <div class="large-12 columns">
+        <div class="large-8 columns">
           <?php if (have_posts()):
               while (have_posts()) : the_post(); 
                 the_content();
               endwhile;
             endif; ?>
         </div>
-    </div>
+        <div class="large-4 columns">
+          <?php dynamic_sidebar( 'teaching' ); ?>
+        </div>
 
-<?php get_footer(); ?>
+    </div>

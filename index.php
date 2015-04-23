@@ -25,8 +25,8 @@ get_header(); ?>
                     <?php the_post_thumbnail(); ?>
                     </a>
                   <?php endif; ?>
-                <p class="text-justify"><?php the_excerpt_max_charlength(280); ?></p>
-                <p><a href="<?php the_permalink(); ?>">Read more.</a></p>
+                <p class="text-justify"><?php the_excerpt_max_charlength(280); ?>
+                <a href="<?php the_permalink(); ?>">Read more</a></p>
             <?php endwhile; endif; ?>
         </div>
         <div class="medium-4 columns">
@@ -39,8 +39,8 @@ get_header(); ?>
                     <?php the_post_thumbnail(); ?>
                     </a>
                   <?php endif; ?>
-                <p class="text-justify"><?php the_excerpt_max_charlength(280); ?></p>
-                <p><a href="<?php the_permalink(); ?>">Read more.</a></p>
+                <p class="text-justify"><?php the_excerpt_max_charlength(280); ?>
+                <a href="<?php the_permalink(); ?>">Read more</a></p>
             <?php endwhile; endif; ?>
         </div>
         <div class="medium-4 columns">
@@ -53,8 +53,8 @@ get_header(); ?>
                     <?php the_post_thumbnail(); ?>
                     </a>
                   <?php endif; ?>
-                <p class="text-justify"><?php the_excerpt_max_charlength(280); ?></p>
-                <p><a href="<?php the_permalink(); ?>">Read more.</a></p>
+                <p class="text-justify"><?php the_excerpt_max_charlength(280); ?>
+                <a href="<?php the_permalink(); ?>">Read more</a></p>
             <?php endwhile; endif; ?>
         </div>
 

@@ -80,7 +80,7 @@ query_posts ($args); ?>
 </div>
 
         <div class="large-4 columns">
-          <?php dynamic_sidebar( 'experts' ); ?>
+          <?php dynamic_sidebar( 'affiliates' ); ?>
         </div>
 
     </div>

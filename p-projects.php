@@ -57,8 +57,8 @@ query_posts ($args); ?>
                     <?php the_post_thumbnail(); ?></a>
                   <?php endif; ?>
                 </div>
-                  <?php the_excerpt(); ?>
-                  <p><a href="<?php the_permalink() ?>">Read More</a></p>
+                <p><?php the_excerpt_max_charlength(280); ?>
+                <a href="<?php the_permalink(); ?>">Read more</a></p>
                   <hr>
                   <?php endwhile; ?>
                     <?php wp_reset_query(); ?>

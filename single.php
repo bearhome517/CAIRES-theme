@@ -3,7 +3,7 @@
 
 
     <div class="row">
-        <div class="large-9 columns">
+        <div class="large-12 columns">
           <?php if (have_posts()):
               while (have_posts()) : the_post(); ?>
                 <h3><?php the_title(); ?></h3>
@@ -13,7 +13,7 @@
             endif; ?>
                 </div>
         </div>
-        <div class="large-3 columns">
+<!--        <div class="large-3 columns">
           <?php
               if (is_single() && in_category('current-projects') ) {
                   dynamic_sidebar('projects');
@@ -24,7 +24,7 @@
               }
           ?>    
         </div>
-
+-->
     </div>
 
 

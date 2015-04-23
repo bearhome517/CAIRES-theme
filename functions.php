@@ -83,18 +83,10 @@ add_action('wp_enqueue_scripts', 'foundation_js');
 //Widget Areas
 
 function blank_widgets_init() {
-  register_sidebar( array(
-    'name' => 'Partners',
-    'id' => 'partners',
-    'before_widget' => '',
-    'after_widget' => '',
-    'before_title' => '<h3>',
-    'after_title' => '</h3>'
-  ));
 
   register_sidebar( array(
-    'name' => 'Experts',
-    'id' => 'experts',
+    'name' => 'Affiliates',
+    'id' => 'affiliates',
     'before_widget' => '',
     'after_widget' => '',
     'before_title' => '<h3>',
@@ -135,11 +127,6 @@ add_action('widgets_init', 'blank_widgets_init');
 add_theme_support( 'post-thumbnails' ); 
 set_post_thumbnail_size( 300, 300 );
 
-function custom_excerpt_length( $length ) {
-  return 35;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
 function the_excerpt_max_charlength($charlength) {
   $excerpt = get_the_excerpt();
   $charlength++;
@@ -153,7 +140,7 @@ function the_excerpt_max_charlength($charlength) {
     } else {
       echo $subex;
     }
-    echo '[...]';
+    echo '...';
   } else {
     echo $excerpt;
   }
