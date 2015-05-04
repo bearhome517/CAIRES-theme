@@ -23,10 +23,21 @@ get_header(); ?>
 <div class="content-wrapper">
     <div class="row">
         <div class="large-12 columns">
-          <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+                <h3>Search by name or keyword</h3>
+<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>category/teaching-resources">
+  <label>
+    <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+  </label>
+  <input type="submit" class="search-submit button" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
+</form>
+
+
+
+                    <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
     $args = array(
-      'cat' => '11',
-      'posts_per_page' => 8,
+      'cat' => '10',
+      'posts_per_page' => 10,
       'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
       'fields'  => 'ID',
       'exclude' => array(
@@ -64,10 +75,5 @@ query_posts ($args); ?>
           </div>
   
   </div>
-
-<!--        <div class="large-4 columns">
-          <?php dynamic_sidebar( 'teaching' ); ?>
-        </div>
--->
-    </div>
+</div>
 <?php get_footer(); ?>
