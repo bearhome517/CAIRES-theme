@@ -56,10 +56,6 @@ query_posts ($args); ?>
 <?php while ( have_posts()) : the_post(); ?>
 
                 <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-                <span class="meta">
-                  <?php the_time('F jS, Y'); ?><br />
-                  <!--<?php the_author_link(); ?> -->
-                </span>
                 <div class="thumb left">
                   <?php if ( has_post_thumbnail() ) : ?>
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
