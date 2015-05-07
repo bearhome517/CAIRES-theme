@@ -74,6 +74,6 @@
       <a class="hot-link-top right" href="<?php $url = home_url('/');
         echo $url;?>current-projects" title="See our current projects"></a>
       <a class="hot-link-bottom right" href="<?php $url = home_url('/');
-        echo $url;?>faculty-experts" title="Join our network of experts"></a>
+        echo $url;?>faculty-affiliates" title="Join our network of experts"></a>
     </div>
   </div>
